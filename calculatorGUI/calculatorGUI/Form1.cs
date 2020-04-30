@@ -44,5 +44,17 @@ namespace calculatorGUI
             double second = Convert.ToDouble(value2.Text);
             resultBox.Text = Convert.ToString(first / second);
         }
+
+        private void useResult1_Click(object sender, EventArgs e)
+        {
+            value1.Text = resultBox.Text;
+            value2.Clear();
+        }
+
+        private void UseResult2_Click(object sender, EventArgs e)
+        {
+            value2.Text = resultBox.Text;
+            value1.Clear();
+        }
     }
 }

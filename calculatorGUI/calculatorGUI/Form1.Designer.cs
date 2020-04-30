@@ -39,6 +39,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.resultBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.useResult1 = new System.Windows.Forms.Button();
+            this.UseResult2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // value1
@@ -134,18 +136,41 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(133, 31);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(69, 45);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(565, 17);
+            this.label4.Size = new System.Drawing.Size(672, 20);
             this.label4.TabIndex = 10;
             this.label4.Text = "Directions:  Put your two values and click on the operation that you would like t" +
     "o perform!";
+            // 
+            // useResult1
+            // 
+            this.useResult1.Location = new System.Drawing.Point(74, 387);
+            this.useResult1.Name = "useResult1";
+            this.useResult1.Size = new System.Drawing.Size(186, 23);
+            this.useResult1.TabIndex = 11;
+            this.useResult1.Text = "Use Result as First Value";
+            this.useResult1.UseVisualStyleBackColor = true;
+            this.useResult1.Click += new System.EventHandler(this.useResult1_Click);
+            // 
+            // UseResult2
+            // 
+            this.UseResult2.Location = new System.Drawing.Point(536, 387);
+            this.UseResult2.Name = "UseResult2";
+            this.UseResult2.Size = new System.Drawing.Size(205, 23);
+            this.UseResult2.TabIndex = 12;
+            this.UseResult2.Text = "Use Result as Second Value";
+            this.UseResult2.UseVisualStyleBackColor = true;
+            this.UseResult2.Click += new System.EventHandler(this.UseResult2_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.UseResult2);
+            this.Controls.Add(this.useResult1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.resultBox);
             this.Controls.Add(this.label3);
@@ -177,6 +202,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox resultBox;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button useResult1;
+        private System.Windows.Forms.Button UseResult2;
     }
 }
 
