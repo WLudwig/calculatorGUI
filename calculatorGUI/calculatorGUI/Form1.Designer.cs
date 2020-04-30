@@ -38,6 +38,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.resultBox = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // value1
@@ -55,6 +56,7 @@
             this.plusButton.TabIndex = 1;
             this.plusButton.Text = "+";
             this.plusButton.UseVisualStyleBackColor = true;
+            this.plusButton.Click += new System.EventHandler(this.plusButton_Click);
             // 
             // subractButton
             // 
@@ -64,6 +66,7 @@
             this.subractButton.TabIndex = 2;
             this.subractButton.Text = "-";
             this.subractButton.UseVisualStyleBackColor = true;
+            this.subractButton.Click += new System.EventHandler(this.subractButton_Click);
             // 
             // multiplyButton
             // 
@@ -73,6 +76,7 @@
             this.multiplyButton.TabIndex = 3;
             this.multiplyButton.Text = "X";
             this.multiplyButton.UseVisualStyleBackColor = true;
+            this.multiplyButton.Click += new System.EventHandler(this.multiplyButton_Click);
             // 
             // divideButton
             // 
@@ -82,6 +86,7 @@
             this.divideButton.TabIndex = 4;
             this.divideButton.Text = "/";
             this.divideButton.UseVisualStyleBackColor = true;
+            this.divideButton.Click += new System.EventHandler(this.divideButton_Click);
             // 
             // value2
             // 
@@ -126,11 +131,22 @@
             this.resultBox.Size = new System.Drawing.Size(141, 22);
             this.resultBox.TabIndex = 9;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(133, 31);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(565, 17);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Directions:  Put your two values and click on the operation that you would like t" +
+    "o perform!";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.resultBox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -160,6 +176,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox resultBox;
+        private System.Windows.Forms.Label label4;
     }
 }
 

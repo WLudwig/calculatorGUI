@@ -16,5 +16,33 @@ namespace calculatorGUI
         {
             InitializeComponent();
         }
+
+        private void plusButton_Click(object sender, EventArgs e)
+        {
+            double first = Convert.ToDouble(value1.Text);
+            double second = Convert.ToDouble(value2.Text);
+            resultBox.Text = Convert.ToString(first + second);
+        }
+
+        private void subractButton_Click(object sender, EventArgs e)
+        {
+            double first = Convert.ToDouble(value1.Text);
+            double second = Convert.ToDouble(value2.Text);
+            resultBox.Text = Convert.ToString(first - second);
+        }
+
+        private void multiplyButton_Click(object sender, EventArgs e)
+        {
+            double first = Convert.ToDouble(value1.Text);
+            double second = Convert.ToDouble(value2.Text);
+            resultBox.Text = Convert.ToString(first * second);
+        }
+
+        private void divideButton_Click(object sender, EventArgs e)
+        {
+            double first = Convert.ToDouble(value1.Text);
+            double second = Convert.ToDouble(value2.Text);
+            resultBox.Text = Convert.ToString(first / second);
+        }
     }
 }
