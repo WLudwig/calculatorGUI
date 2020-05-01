@@ -119,7 +119,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(358, 340);
+            this.label3.Location = new System.Drawing.Point(358, 300);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(87, 29);
             this.label3.TabIndex = 8;
@@ -127,10 +127,10 @@
             // 
             // resultBox
             // 
-            this.resultBox.Location = new System.Drawing.Point(333, 388);
+            this.resultBox.Location = new System.Drawing.Point(94, 343);
             this.resultBox.Name = "resultBox";
             this.resultBox.ReadOnly = true;
-            this.resultBox.Size = new System.Drawing.Size(141, 22);
+            this.resultBox.Size = new System.Drawing.Size(627, 22);
             this.resultBox.TabIndex = 9;
             // 
             // label4
@@ -139,10 +139,10 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(69, 45);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(672, 20);
+            this.label4.Size = new System.Drawing.Size(652, 20);
             this.label4.TabIndex = 10;
-            this.label4.Text = "Directions:  Put your two values and click on the operation that you would like t" +
-    "o perform!";
+            this.label4.Text = "Directions:  Insert two values and click on the operation that you would like to " +
+    "perform!";
             // 
             // useResult1
             // 

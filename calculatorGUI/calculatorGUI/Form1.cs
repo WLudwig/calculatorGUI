@@ -19,30 +19,87 @@ namespace calculatorGUI
 
         private void plusButton_Click(object sender, EventArgs e)
         {
-            double first = Convert.ToDouble(value1.Text);
-            double second = Convert.ToDouble(value2.Text);
-            resultBox.Text = Convert.ToString(first + second);
+
+            if (value1.Text == "" || value2.Text == "")
+            {
+                resultBox.Text = "Error: Please enter two valid values";
+            }
+            else
+            {
+                try
+                {
+                    double first = Convert.ToDouble(value1.Text);
+                    double second = Convert.ToDouble(value2.Text);
+                    resultBox.Text = Convert.ToString(first + second);
+                }
+                catch(Exception ex)
+                {
+                    resultBox.Text = "Error: Please input only numerical values";
+                }
+            }
         }
 
         private void subractButton_Click(object sender, EventArgs e)
         {
-            double first = Convert.ToDouble(value1.Text);
-            double second = Convert.ToDouble(value2.Text);
-            resultBox.Text = Convert.ToString(first - second);
+            if (value1.Text == "" || value2.Text == "")
+            {
+                resultBox.Text = "Error: Please enter two valid values";
+            }
+            else
+            {
+                try
+                {
+                    double first = Convert.ToDouble(value1.Text);
+                    double second = Convert.ToDouble(value2.Text);
+                    resultBox.Text = Convert.ToString(first - second);
+                }
+                catch (Exception ex)
+                {
+                    resultBox.Text = "Error: Please input only numerical values";
+                }
+            }
         }
 
         private void multiplyButton_Click(object sender, EventArgs e)
         {
-            double first = Convert.ToDouble(value1.Text);
-            double second = Convert.ToDouble(value2.Text);
-            resultBox.Text = Convert.ToString(first * second);
+            if (value1.Text == "" || value2.Text == "")
+            {
+                resultBox.Text = "Error: Please enter two valid values";
+            }
+            else
+            {
+                try
+                {
+                    double first = Convert.ToDouble(value1.Text);
+                    double second = Convert.ToDouble(value2.Text);
+                    resultBox.Text = Convert.ToString(first * second);
+                }
+                catch (Exception ex)
+                {
+                    resultBox.Text = "Error: Please input only numerical values";
+                }
+            }
         }
 
         private void divideButton_Click(object sender, EventArgs e)
         {
-            double first = Convert.ToDouble(value1.Text);
-            double second = Convert.ToDouble(value2.Text);
-            resultBox.Text = Convert.ToString(first / second);
+            if (value1.Text == "" || value2.Text == "")
+            {
+                resultBox.Text = "Error: Please enter two valid values";
+            }
+            else
+            {
+                try
+                {
+                    double first = Convert.ToDouble(value1.Text);
+                    double second = Convert.ToDouble(value2.Text);
+                    resultBox.Text = Convert.ToString(first / second);
+                }
+                catch (Exception ex)
+                {
+                    resultBox.Text = "Error: Please input only numerical values";
+                }
+            }
         }
 
         private void useResult1_Click(object sender, EventArgs e)
